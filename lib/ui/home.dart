@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
 
   void onPress() {
-    print("Search Tapped"); 
+    print("Search Tapped");
   }
 
   @override
@@ -29,6 +29,22 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
+
+      backgroundColor: Colors.lightGreen,
+      body: new Container(
+        alignment: Alignment.center,
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Text("Bonnie", style: new TextStyle(fontSize: 14.5, fontWeight: FontWeight.w800, color: Colors.deepOrange),),
+            new InkWell(
+              child: new Text("Button!"),
+              onTap: () => debugPrint("Button Taped"),
+            )
+          ],
+        )
+      )
+
     );
   }
 
