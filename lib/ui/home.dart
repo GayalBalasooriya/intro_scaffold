@@ -42,8 +42,26 @@ class Home extends StatelessWidget {
               onTap: () => debugPrint("Button Taped"),
             )
           ],
-        )
-      )
+        ),
+      ),
+
+      bottomNavigationBar: new BottomNavigationBar(
+        items: [
+          new BottomNavigationBarItem(
+            icon: new Icon(Icons.add),
+            title: new Text("hey"),
+          ),
+          new BottomNavigationBarItem(
+            icon: new Icon(Icons.print),
+            title: new Text("hoy"),
+          ),
+          new BottomNavigationBarItem(
+            icon: new Icon(Icons.call_missed),
+            title: new Text("hiy"),
+          ),
+        ],
+        onTap: (int i) => debugPrint("Hey touched $i"),
+      ),
 
     );
   }
